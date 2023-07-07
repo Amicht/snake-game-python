@@ -54,8 +54,8 @@ while game_is_on:
 
     # Detect wall collision:
     if check_wall_collision() or check_tail_collision():
-        game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
 
 
 screen.exitonclick()
